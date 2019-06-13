@@ -1,6 +1,47 @@
 .App {
   text-align: center;
 }
+h6{
+  text-align: right !important;
+}
+
+.trash{
+  position: relative;
+  left: 210px;
+  top: 40px;
+  cursor: pointer;
+}
+.mag-glass{
+  position: relative;
+  right: 40px;
+}
+.search-input{
+  font-size: 20px;
+}
+body{
+  margin: 100px;
+}
+label{
+  margin: 30px;
+}
+
+.uk-input{
+  width: 300px !important;
+}
+
+.search-form{
+text-align: center !important;
+}
+
+form{
+  border: 1px solid grey;
+  padding: 30px;
+}
+img{
+  height: 300px;
+  width: 400px;
+
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -30,4 +71,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.uk-button{
+  box-shadow: 5px 5px grey !important;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.05);
+    /* color: #58b368; */
+
 }

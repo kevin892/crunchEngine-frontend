@@ -1,0 +1,78 @@
+.container {
+  width: 1025px;
+  text-align: left;
+  font-size: 22px;
+  margin: 5px;
+  height: 75px;
+  color: white;
+  background: #212121;
+  border: 1px solid #212121;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.container1 {
+  color: white;
+  text-align: center;
+}
+
+.border {
+  color: white;
+  font-size: 33px;
+  position: absolute;
+  right: 95px;
+  bottom: 30px;
+}
+
+.hvr-doc {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-doc:hover,
+.hvr-doc:focus,
+.hvr-doc:active {
+  transform: scale(1.03);
+  color: white;
+}
+
+.answers {
+  margin: 1px;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  right: 50px;
+  top: 44px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.upvote-amount {
+  margin: 1px;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  right: 160px;
+  top: 44px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.upvote-text {
+  margin: 1px;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  right: 200px;
+  top: 30px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+a {
+  padding-top: 30px;
+  padding-left: 50px;
+}

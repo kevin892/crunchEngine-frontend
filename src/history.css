@@ -1,0 +1,76 @@
+.search-term {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.visited {
+  font-size: 20px;
+  margin-left: 10px;
+  position: absolute;
+  right: 30px;
+}
+
+p {
+  margin: auto;
+}
+
+.date-visited {
+  font-size: 20px;
+  margin-left: 10px;
+  position: absolute;
+  right: 300px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+}
+
+.num {
+  font-size: 20px;
+  margin-left: 10px
+}
+
+.num-pages {
+  position: absolute;
+  font-size: 20px;
+  right: 14px;
+  color: white
+}
+
+.history-div {
+  background: #212121;
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+  cursor: pointer;
+  border: .02px solid white;
+}
+
+.hvr-grow1 {}
+
+.hidden-div {
+  margin: 30px;
+}
+
+.hidden-url {
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.hvr-grow1 {
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow1:hover,
+.hvr-grow1:focus,
+.hvr-grow1:active {
+  transform: scale(1.01);
+  color: white;
+}

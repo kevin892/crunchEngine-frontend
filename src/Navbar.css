@@ -1,0 +1,31 @@
+.logo {
+  position: relative;
+  right:1px;
+  bottom: 20px;
+  height: 150px;
+}
+
+
+.nav-button{
+font-size: 15px !important;
+}
+
+.user-icon{
+  position: absolute;
+  top: 80px;
+  right: 20px;
+}
+
+.username {
+  position: relative;
+  left: 20px;
+  top: 4px;
+
+}
+
+.profile-gif{
+  height: 70px;
+  width: 100px;
+  box-shadow: 5px 5px grey !important;
+    border-radius: 10px;
+}

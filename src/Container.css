@@ -1,0 +1,105 @@
+.saved-gifs-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  cursor: pointer;
+}
+.saved-gif-item{
+  margin: 5px;
+}
+
+.icon{
+  position: relative;
+  color: white;
+  right: 230px;
+  cursor: pointer;
+}
+
+.gif-card{
+  border-right: 220px solid black;
+  margin: 20px;
+  width: 600px;
+}
+
+.hvr-grow-add {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.uk-button{
+  box-shadow: 5px 5px grey !important;
+}
+
+.hvr-grow-add:hover,
+.hvr-grow-add:focus,
+.hvr-grow-add:active {
+    transform: scale(1.05);
+    color: #58b368;
+
+}
+
+.hvr-grow-gif {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.uk-button{
+  box-shadow: 5px 5px grey !important;
+}
+
+.hvr-grow-gif:hover,
+.hvr-grow-gif:focus,
+.hvr-grow-gif:active {
+    transform: scale(1.05);
+    color: blue;
+
+}
+
+.hvr-grow-link {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.uk-button{
+  box-shadow: 5px 5px grey !important;
+}
+
+.hvr-grow-link:hover,
+.hvr-grow-link:focus,
+.hvr-grow-link:active {
+    transform: scale(1.05);
+    color: orange;
+
+}
+
+.hvr-gif{
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-gif:hover,
+.hvr-gif:focus,
+.hvr-gif:active {
+    transform: scale(1.05);
+
+}

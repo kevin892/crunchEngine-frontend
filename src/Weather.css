@@ -1,0 +1,18 @@
+.weather-div{
+  font-size: 20px;
+  position: relative;
+  top: 15px;
+  right:1000px;
+  text-align: right;
+}
+
+.degree-icon{
+  font-size: 12px;
+  position: absolute;
+}
+
+.weather-icon{
+position: absolute;
+left: 80px;
+font-size: 50px;
+}
