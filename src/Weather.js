@@ -43,7 +43,10 @@ class Weather extends React.Component {
           return <div><span className='weather-icon'>☀️</span><span>{this.setUp(details)}</span>
           </div>
           break;
-        case 'shower rain' || 'rain' || 'mist':
+        case 'shower rain':
+        case 'rain':
+        case 'mist':
+        case 'light rain':
           return <div><span className='weather-icon'>🌧</span>{this.setUp(details)}
           </div>
           break;
