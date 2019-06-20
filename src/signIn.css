@@ -1,0 +1,66 @@
+form{
+  text-align: center;
+}
+
+
+
+.create-account {
+  position: relative;
+  left: 37%;
+  background-color: #58b368;
+  width: 225px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.sign-in{
+  position: relative;
+  left: 37%;
+  width: 225px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.add-account-button{
+  position: relative;
+  left: 37%;
+  background-color: #58b368;
+  width: 425px;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.back{
+  position: relative;
+  left: 37%;
+  background-color: #fd5f00;
+  width: 425px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.hvr-button {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-button:hover,
+.hvr-button:focus,
+.hvr-button:active {
+  transform: scale(1.02);
+  text-decoration: none;
+  background-color: black
+}

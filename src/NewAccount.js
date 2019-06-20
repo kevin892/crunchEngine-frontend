@@ -1,4 +1,8 @@
 import React from 'react'
+import Swal from 'sweetalert2'
+import './Navbar.css'
+import logo from'./images/crunchengine.png'
+import './signIn.css'
 
 class NewAccount extends React.Component {
 
@@ -9,6 +13,17 @@ class NewAccount extends React.Component {
   }
 
   view = (data)=> {
+    if(data.email){
+      Swal.fire({
+    type: 'info',
+    title: 'Email is already in use'
+  })
+      this.setState({
+        username: '',
+        email: '',
+        password: ''
+      })
+    } else{
     return fetch('http://localhost:3000/authenticate', {
       method: 'POST',
       headers: {
@@ -21,8 +36,15 @@ class NewAccount extends React.Component {
       console.log(error);
     });
   }
+}
 
   createUser = (username, email, password) => {
+    if(username===''||username===''||password===''){
+      Swal.fire({
+    type: 'info',
+    title: 'Please Complete Form'
+  })
+}else{
     return fetch('http://localhost:3000/create-user', {
       method: 'POST',
       headers: {
@@ -35,6 +57,7 @@ class NewAccount extends React.Component {
     .catch(error => {
       console.log(error)
     });
+  }
   }
 
   handleSignInResponse = (response, email)=> {
@@ -75,25 +98,33 @@ handleSubmit = (event)=> {
 
   render() {
     return (<div>
-      <form onSubmit={this.handleSubmit}>
+      <br/>
+      <nav className="uk-navbar uk-margin" uk-navbar="mode: click" uk-navbar>
+          <div className="uk-navbar-right">
+              <ul className="uk-navbar-nav">
+                <img className="logo uk-navbar-item uk-logo" src={logo}></img>
+              </ul>
+            </div>
+      </nav><hr/>
+      <form>
         <h2>Create Account</h2>
 
         <div class="uk-inline">
           <span class="uk-form-icon" uk-icon="icon: user"></span>
-          <input class="uk-input" type="text" name="username" value={this.state.username} onChange={this.handleChange}/></div>
+          <input class="uk-input" placeholder='username' type="text" name="username" value={this.state.username} onChange={this.handleChange}/></div>
 
           <div class="uk-inline">
             <span class="uk-form-icon" uk-icon="icon: mail"></span>
-            <input class="uk-input" type="text" name="email" value={this.state.email} onChange={this.handleChange}/></div>
+            <input class="uk-input" type="text" placeholder='email' name="email" value={this.state.email} onChange={this.handleChange}/></div>
 
             <div class="uk-inline">
               <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-              <input class="uk-input" type="text" name="password" value={this.state.password} onChange={this.handleChange}/></div>
+              <input class="uk-input" type="password" placeholder='password'name="password" value={this.state.password} onChange={this.handleChange}/></div>
               <br/>
               <br/>
-              <button>Create Account</button>
-
           </form>
+            <button onClick={()=>  this.createUser(this.state.username,this.state.email, this.state.password)}className='hvr-button  add-account-button uk-button-primary'>Create Account</button><br/>
+          <button onClick={()=>window.location = '/sign-in'}className='hvr-button back uk-button-primary'>Back to Sign In</button>
         </div>
         )
   }

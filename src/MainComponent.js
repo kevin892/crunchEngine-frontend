@@ -28,7 +28,7 @@ const MainComponent = (props) => {
   return (<div>
     {
       props.searchInput !== ''
-        ? <h3>🔎 {props.searchInput}</h3>
+        ? <h3 className='searchedItem'>🔎 {props.searchInput}</h3>
         : ''
     }
 

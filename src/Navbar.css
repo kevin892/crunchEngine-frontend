@@ -1,10 +1,14 @@
 .logo {
-  position: relative;
-  right:1px;
-  bottom: 20px;
-  height: 150px;
+  position: absolute;
+  left:1rem;
+  bottom: 1px;
+  height: 180px;
+  width: 480px;
 }
 
+.trash{
+  font-size: 30px;
+}
 
 .nav-button{
 font-size: 15px !important;
@@ -12,7 +16,7 @@ font-size: 15px !important;
 
 .user-icon{
   position: absolute;
-  top: 80px;
+  bottom: 150px;
   right: 20px;
 }
 
@@ -24,8 +28,7 @@ font-size: 15px !important;
 }
 
 .profile-gif{
-  height: 70px;
-  width: 100px;
-  box-shadow: 5px 5px grey !important;
-    border-radius: 10px;
+  height: 40px;
+  width: 50px;
+    border-radius: 5px;
 }

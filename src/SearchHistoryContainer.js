@@ -41,7 +41,7 @@ destroyAll =() => {
       ? window.location = '/sign-in'
       : <div>
       <Navbar/>
-      <span onClick={this.destroyAll} className='trash hvr-grow' uk-icon="icon: trash; ratio: 2"></span>
+      <span onClick={this.destroyAll} className='trash hvr-grow'>🗑</span>
         <MapSearchHistories searches={this.state.savedSearches}/>
       </div>)
   }

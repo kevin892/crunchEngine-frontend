@@ -1,26 +1,26 @@
 .container {
-  width: 1025px;
+  width: 1650px;
   text-align: left;
-  font-size: 22px;
+  font-size: 25px;
   margin: 5px;
   height: 75px;
-  color: white;
-  background: #212121;
-  border: 1px solid #212121;
+  color: black;
+  background: #C5C3C6;
+
   font-family: 'Oxygen', sans-serif;
 }
 
 .container1 {
-  color: white;
+  color: black;
   text-align: center;
 }
 
 .border {
-  color: white;
-  font-size: 33px;
+  color: black;
+  font-size: 45px;
   position: absolute;
-  right: 95px;
-  bottom: 30px;
+  right: 70px;
+  bottom: 20px;
 }
 
 .hvr-doc {
@@ -37,37 +37,39 @@
 .hvr-doc:hover,
 .hvr-doc:focus,
 .hvr-doc:active {
-  transform: scale(1.03);
-  color: white;
+  transform: scale(1.003);
+  background-color: #1b7fbd;
+  text-decoration: none;
+  color: black;
 }
 
 .answers {
   margin: 1px;
-  font-size: 20px;
-  color: white;
+  font-size: 50px;
+  color: black;
   position: absolute;
-  right: 50px;
-  top: 44px;
+  right: 130px;
+  top: 20px;
   font-family: 'Oxygen', sans-serif;
 }
 
 .upvote-amount {
   margin: 1px;
-  font-size: 20px;
-  color: white;
+  font-size: 50px;
+  color: black;
   position: absolute;
-  right: 160px;
-  top: 44px;
+  right: 320px;
+  top: 20px;
   font-family: 'Oxygen', sans-serif;
 }
 
 .upvote-text {
   margin: 1px;
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   position: absolute;
-  right: 200px;
-  top: 30px;
+  right: 240px;
+  top: 17px;
   font-family: 'Oxygen', sans-serif;
 }
 

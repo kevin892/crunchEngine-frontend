@@ -1,10 +1,10 @@
 .saved-gifs-container {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
   cursor: pointer;
 }
 .saved-gif-item{
-  margin: 5px;
+  margin: 10px;
 }
 
 .icon{

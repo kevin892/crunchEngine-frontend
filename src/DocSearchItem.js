@@ -8,10 +8,8 @@ if (props.title === undefined){
 } else {
   searchValue =
 <div className='hvr-doc'>
-  <a className='container hvr-doc' href={props.link} onClick={() => props.addVisitedPage(props.link, props.searchID)} target="_blank">{props.title}></a><span className='border'>📄</span>
+  <a className='container hvr-doc' href={props.link} onClick={() => props.addVisitedPage(props.link, props.searchID)} target="_blank">{props.title}></a><span className='border'>📒</span>
   </div>
-
-  // <img src={props.link} target="_blank">{props.link}</img>
 }
 
   return(

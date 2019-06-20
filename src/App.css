@@ -1,6 +1,16 @@
 .App {
   text-align: center;
 }
+
+.searchLabel{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.searchLabels{
+  height: 30px;
+  width: 30px;
+}
 h6{
   text-align: right !important;
 }
@@ -13,10 +23,11 @@ h6{
 }
 .mag-glass{
   position: relative;
-  right: 40px;
+  cursor: pointer;
+  left: 20px;
 }
 .search-input{
-  font-size: 20px;
+  font-size: 40px;
 }
 body{
   margin: 100px;
@@ -26,7 +37,8 @@ label{
 }
 
 .uk-input{
-  width: 300px !important;
+  width: 450px !important;
+  height: 65px;
 }
 
 .search-form{
@@ -34,7 +46,7 @@ text-align: center !important;
 }
 
 form{
-  border: 1px solid grey;
+
   padding: 30px;
 }
 img{
@@ -93,4 +105,30 @@ img{
     transform: scale(1.05);
     /* color: #58b368; */
 
+}
+
+.hvr-growr {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.uk-button{
+  box-shadow: 5px 5px grey !important;
+}
+
+.hvr-growr:hover,
+.hvr-growr:focus,
+.hvr-growr:active {
+    transform: scale(1.2);
+    color: #1b7fbd;
+
+}
+
+.searchedItem{
+  font-size: 40px;
 }

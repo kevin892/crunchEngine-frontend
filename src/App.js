@@ -48,7 +48,7 @@ componentWillMount=()=> {
     this.addSearch(newSearchTerm)
     const searchTerm = newSearchTerm.split(' ').join('+')
     const field = this.handleSearch(searchTerm, newSearchType)
-    const url = `https://www.googleapis.com/customsearch/v1?key=${ApiKeys.cseKeyOne}&cx=${ApiKeys.cx}${field}`
+    const url = `https://www.googleapis.com/customsearch/v1?key=${ApiKeys.cseKeyTwo}&cx=${ApiKeys.cx}${field}`
     fetch(url).then(response => {
       return response.json();
     }).then(result => {
